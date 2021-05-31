@@ -2,7 +2,13 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
-export default function Home() {
+type Props = {
+  title: string
+}
+
+const foo = 'bla'
+
+export default function Home({ title }: Props) {
   return (
     <div className={styles.container}>
       <Head>
